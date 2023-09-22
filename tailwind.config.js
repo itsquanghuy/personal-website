@@ -5,7 +5,11 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      colors: {
+        wm: "#FABC16",
+      },
+    },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
 };

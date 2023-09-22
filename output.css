@@ -641,13 +641,13 @@ code,
 .post__link {
   font-family: inherit;
   --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
+  color: rgb(217 119 6 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 
 .post__link:hover {
   --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
+  color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
 .post__embed {
@@ -725,12 +725,12 @@ code,
 
 .card__link--hover {
   --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
+  color: rgb(217 119 6 / var(--tw-text-opacity));
 }
 
 .card__link--hover:hover {
   --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
+  color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
 .profile {
@@ -802,6 +802,12 @@ code,
   .profile__name {
     text-align: left;
   }
+}
+
+.profile__name--last {
+  text-decoration-line: underline;
+  text-decoration-color: #d97706;
+  text-underline-offset: 4px;
 }
 
 .profile__bio {
@@ -1012,4 +1018,16 @@ code,
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-amber-600 {
+  text-decoration-color: #d97706;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
