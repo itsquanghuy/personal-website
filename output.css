@@ -641,6 +641,7 @@ code,
   margin-top: 1.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.625;
 }
 
 .post__unordered_list {
@@ -652,6 +653,7 @@ code,
   padding-left: 1.75rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.625;
 }
 
 .post__ordered_list {
@@ -663,6 +665,7 @@ code,
   padding-left: 2.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.625;
 }
 
 .post__code {
@@ -695,12 +698,14 @@ code,
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+  line-height: 1.625;
 }
 
 .post__quote_citation {
   margin-top: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.625;
 }
 
 .post__link {
@@ -840,18 +845,6 @@ code,
   .profile--prioritized {
     order: 9999;
     border-bottom-width: 0px;
-  }
-}
-
-.profile--non_prioritized {
-  border-top-width: 1px;
-  padding-top: 2.5rem;
-}
-
-@media (min-width: 1024px) {
-  .profile--non_prioritized {
-    border-top-width: 0px;
-    padding-top: 0px;
   }
 }
 
@@ -1312,24 +1305,16 @@ code,
   margin: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .box-border {
