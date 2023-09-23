@@ -829,10 +829,23 @@ code,
   text-underline-offset: 4px;
 }
 
+.profile__link {
+  font-family: inherit;
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.profile__link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
 .profile__bio {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
   width: 66.666667%;
   text-align: center;
   font-style: italic;
@@ -866,6 +879,12 @@ code,
 .contacts {
   margin-top: 1.75rem;
   margin-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .contacts {
+    margin-top: 0px;
+  }
 }
 
 .social_media {
