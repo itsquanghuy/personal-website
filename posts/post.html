@@ -17,7 +17,7 @@
     />
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/logo.png"
+      content="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/avatar.png"
     />
     <meta
       property="og:description"
@@ -53,7 +53,7 @@
     </title>
   </head>
   <body>
-    <main class="layout">
+    <main class="post-layout">
       <section class="post">
         <h1 class="post__title">
           Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero
@@ -303,47 +303,35 @@
           mauris in aliquam sem fringilla. Sed blandit libero volutpat sed.
           Cursus metus aliquam eleifend mi in nulla posuere sollicitudin.
         </p>
-      </section>
-      <aside class="profile profile--non_prioritized">
-        <div class="profile--fixed">
-          <a href="/"
-            ><img
-              src="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/logo.png"
-              class="profile__avatar"
-          /></a>
-          <p class="profile__bio">
-            Hi! I'm Huy and I love building products. I aspire to be better in a
-            product management role.
-          </p>
-          <div class="contacts">
-            <div class="social_media">
-              <a href="https://twitter.com/v_qhuy" class="social_media__account"
-                ><img
-                  src="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/twitter.svg"
-                  alt="Twitter"
-                  class="social_media__account--small"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/v-qhuy/"
-                class="social_media__account"
-                ><img
-                  src="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/linkedin.svg"
-                  alt="Linkedin"
-                  class="social_media__account--small"
-                />
-              </a>
-              <a href="mailto:hqvu.work@gmail.com" class="social_media__account"
-                ><img
-                  src="https://raw.githubusercontent.com/vuhuycto/personal-website/main/media/gmail.svg"
-                  alt="Gmail"
-                  class="social_media__account--small"
-                />
-              </a>
-            </div>
-          </div>
+        <div class="border-t border-black mt-10 pt-5">
+          <div id="disqus_thread"></div>
         </div>
-      </aside>
+      </section>
     </main>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+      var disqus_config = function () {
+        this.page.url = "https://vq-huy.com"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "vq-huy"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://huy-quang-vu.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
   </body>
 </html>
