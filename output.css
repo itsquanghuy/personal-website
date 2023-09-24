@@ -491,6 +491,50 @@ nav > a:hover {
   text-decoration-line: underline;
 }
 
+.home-layout {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .home-layout {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-layout {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-layout {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-layout {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .home-layout {
+    max-width: 1536px;
+  }
+}
+
+.home-layout {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .blog-layout {
   width: 100%;
   margin-right: auto;
@@ -904,11 +948,43 @@ nav > a:hover {
 }
 
 .profile {
-  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.666667%;
+}
+
+@media (min-width: 640px) {
+  .profile {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
   .profile {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 14rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .profile {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .profile {
+    width: 24rem;
+  }
+}
+
+.profile-fixed {
+  position: static;
+}
+
+@media (min-width: 1024px) {
+  .profile-fixed {
     position: fixed;
   }
 }
@@ -925,7 +1001,7 @@ nav > a:hover {
 }
 
 @media (min-width: 1024px) {
-  .profile .avatar {
+  .blog-avatar {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -948,11 +1024,7 @@ nav > a:hover {
 }
 
 @media (min-width: 1024px) {
-  .profile > .name {
-    text-align: left;
-  }
-
-  .profile > .\!name {
+  .blog-name {
     text-align: left;
   }
 }
@@ -960,43 +1032,18 @@ nav > a:hover {
 .bio {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-  width: 66.666667%;
+  margin-top: 1rem;
   text-align: center;
   font-style: italic;
 }
 
-@media (min-width: 640px) {
-  .bio {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bio {
-    width: 14rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .bio {
-    width: 20rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .bio {
-    width: 24rem;
-  }
-}
-
-.profile > .bio {
+.blog-bio {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 1024px) {
-  .profile > .bio {
+  .blog-bio {
     text-align: left;
   }
 }
@@ -1005,39 +1052,50 @@ nav > a:hover {
   margin-top: 0.75rem;
 }
 
-.profile > .contacts {
+.blog-contacts {
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
 
 @media (min-width: 1024px) {
-  .profile > .contacts {
+  .blog-contacts {
     margin-top: 0.75rem;
   }
 }
 
-.social_media {
+.social-media {
   display: flex;
+  align-items: center;
   justify-content: center;
-  vertical-align: middle;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.blog-social-media {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 1024px) {
-  .profile > .contacts > .social_media {
+  .blog-social-media {
     justify-content: flex-start;
     border-top-width: 1px;
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
     padding-top: 0.5rem;
   }
 }
 
-.social_media > .account {
+.social-media > .account {
   margin-left: 0.5rem;
   display: block;
 }
 
-.social_media > .account:first-child {
+.social-media > .account:first-child {
   margin-left: 0px;
 }
 
@@ -1498,10 +1556,6 @@ nav > a:hover {
 
 .hidden {
   display: none;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .flex-shrink {
@@ -2611,6 +2665,11 @@ nav > a:hover {
   vertical-align: super;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -2618,6 +2677,10 @@ nav > a:hover {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -2690,6 +2753,11 @@ nav > a:hover {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-amber-600 {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
