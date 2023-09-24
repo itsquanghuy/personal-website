@@ -447,7 +447,9 @@ h1,
   h5,
   h6,
   a,
-  time {
+  time,
+  .card > .tag-layout,
+  .post > address {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 
@@ -721,13 +723,24 @@ nav > a:hover {
   color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
-.post > time {
+.post > address {
   margin-top: 0.5rem;
-  display: block;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-style: normal;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.post > address > a[rel="author"] {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+.post > address > a[rel="author"]:hover {
+  text-decoration-line: underline;
 }
 
 .post > .embed {
@@ -813,6 +826,47 @@ nav > a:hover {
   line-height: 1.75rem;
 }
 
+.card .tag-layout {
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+.card > .tag-layout > .tag {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card > .tag-layout > .\!tag {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card > .tag-layout > .tag > .icon {
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.card > .tag-layout > .\!tag > .icon {
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
 .card > .link {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
@@ -894,11 +948,11 @@ nav > a:hover {
 }
 
 @media (min-width: 1024px) {
-  .profile .name {
+  .profile > .name {
     text-align: left;
   }
 
-  .profile .\!name {
+  .profile > .\!name {
     text-align: left;
   }
 }
@@ -948,13 +1002,17 @@ nav > a:hover {
 }
 
 .contacts {
-  margin-top: 1.75rem;
+  margin-top: 0.75rem;
+}
+
+.profile > .contacts {
+  margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
 
 @media (min-width: 1024px) {
-  .contacts {
-    margin-top: 0px;
+  .profile > .contacts {
+    margin-top: 0.75rem;
   }
 }
 
@@ -965,7 +1023,7 @@ nav > a:hover {
 }
 
 @media (min-width: 1024px) {
-  .social_media {
+  .profile > .contacts > .social_media {
     justify-content: flex-start;
     border-top-width: 1px;
     --tw-border-opacity: 1;
@@ -1333,6 +1391,10 @@ nav > a:hover {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mt-2 {
@@ -2547,6 +2609,11 @@ nav > a:hover {
 
 .align-super {
   vertical-align: super;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
