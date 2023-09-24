@@ -457,6 +457,11 @@ code,
   font-family: Inconsolata, monospace;
 }
 
+.nav {
+  margin-top: 5rem;
+  text-align: center;
+}
+
 .nav__link {
   margin-left: 1rem;
   font-weight: 600;
@@ -1311,10 +1316,6 @@ code,
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
