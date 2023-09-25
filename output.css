@@ -792,10 +792,12 @@ code,
 
 .card .tag-layout {
   margin-top: 0.75rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .card > .tag-layout > .tag {
+  margin-left: 0.375rem;
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
@@ -807,7 +809,12 @@ code,
   padding-right: 0.5rem;
 }
 
+.card > .tag-layout > .tag:first-child {
+  margin-left: 0px;
+}
+
 .card > .tag-layout > .\!tag {
+  margin-left: 0.375rem;
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
@@ -817,6 +824,10 @@ code,
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.card > .tag-layout > .\!tag:first-child {
+  margin-left: 0px;
 }
 
 .card > .tag-layout > .tag > .icon {

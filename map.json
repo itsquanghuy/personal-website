@@ -4,6 +4,7 @@
     "title": "A Slice of My Life",
     "created_at": "Sep 25, 2023",
     "category": "Life",
+    "pinned": true,
     "intro": "In my life, I try not to seek perfection but I do find it beautiful through family, friendship, photography, music, football and many other interests."
   },
   {
@@ -11,6 +12,7 @@
     "title": "Incorporating My Identity into My Career",
     "created_at": "Sep 25, 2023",
     "category": "Career",
+    "pinned": true,
     "intro": "In my career, I am enthusiastic about building products especially those enriching people's life and aspire to be better in a product management role."
   },
   {
@@ -18,6 +20,7 @@
     "title": "Friendship, Brotherhood, Classmates",
     "created_at": "Aug 7, 2023",
     "category": "Life",
+    "pinned": false,
     "intro": "Over the course of a human lifespan, 12 years represents a significant duration, not just for a friendship but also for a bond akin to brotherhood. The enduring connection between these two classmates follows this same pattern."
   },
   {
@@ -25,6 +28,7 @@
     "title": "The Excitement Of Getting The First Film Scan",
     "created_at": "Jul 19, 2023",
     "category": "Life",
+    "pinned": false,
     "intro": "I have a deep love for film photography. The texture of the grain and the unique colors produced by film never fail to give me goosebumps. My journey into film photography began in 2021 when a colleague introduced me to their camera."
   },
   {
@@ -32,6 +36,7 @@
     "title": "100% Focusing On Film Photography",
     "created_at": "Jul 18, 2023",
     "category": "Life",
+    "pinned": false,
     "intro": "I have a deep love for capturing moments, and I firmly believe that as the years pass, photos become increasingly valuable. However, when I look back at my previous photos from 2017, most of them taken with my phone seem to lack any real value."
   },
   {
@@ -39,6 +44,7 @@
     "title": "Finding Peace",
     "created_at": "Jul 14, 2023",
     "category": "Life",
+    "pinned": false,
     "intro": "Work and rest go hand in hand, and I firmly believe that maintaining a balance between the two is essential. Opting to visit Vung Tau City turned out to be a wise decision, providing me with the much-needed respite from my work."
   },
   {
@@ -46,6 +52,7 @@
     "title": "An Unforgettable Trip To A True Dreamy City",
     "created_at": "Jul 12, 2023",
     "category": "Life",
+    "pinned": false,
     "intro": "Many people find it easy to hop from one city to another without much hesitation. However, for me, a myriad of seemingly trivial reasons (such as it being too cold, too far away, or too rainy) had kept me from visiting Da Lat city for my entire life."
   }
 ]
