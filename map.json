@@ -1,5 +1,19 @@
 [
   {
+    "id": "a-slice-of-my-life",
+    "title": "A Slice of My Life",
+    "created_at": "Sep 25, 2023",
+    "category": "Life",
+    "intro": "In my life, I try not to seek perfection but I do find it beautiful through family, friendship, photography, music, football and many other interests."
+  },
+  {
+    "id": "incorporating-my-identity-into-my-career",
+    "title": "Incorporating My Identity into My Career",
+    "created_at": "Sep 25, 2023",
+    "category": "Career",
+    "intro": "In my career, I am enthusiastic about building products especially those enriching people's life and aspire to be better in a product management role."
+  },
+  {
     "id": "friendship-brotherhood-classmates",
     "title": "Friendship, Brotherhood, Classmates",
     "created_at": "Aug 7, 2023",
