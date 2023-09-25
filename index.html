@@ -64,13 +64,13 @@
           <time>{{ post.created_at }}</time>
           <p>{{ post.intro }}</p>
           <div class="tag-layout">
+            <div v-if="post.pinned" class="tag-pinned">
+              <img src="media/pin.svg" class="icon" />
+              <p class="ml-1 text-xs">Pinned</p>
+            </div>
             <div class="tag">
               <img src="media/tag.svg" class="icon" />
               <p class="ml-1 text-xs">{{ post.category }}</p>
-            </div>
-            <div v-if="post.pinned" class="tag">
-              <img src="media/pin.svg" class="icon" />
-              <p class="ml-1 text-xs">Pinned</p>
             </div>
           </div>
         </article>

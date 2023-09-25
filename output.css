@@ -696,7 +696,7 @@ code,
 
 .post a:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(217 119 6 / var(--tw-text-opacity));
 }
 
 .post > address {
@@ -717,7 +717,7 @@ code,
 
 .post > address > a[rel="author"]:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(217 119 6 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 
@@ -786,7 +786,7 @@ code,
 
 .card .link:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(217 119 6 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 
@@ -796,20 +796,20 @@ code,
   align-items: center;
 }
 
-.card > .tag-layout > .tag {
+.card > .tag-layout > .tag,
+  .card > .tag-layout > .tag-pinned {
   margin-left: 0.375rem;
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.card > .tag-layout > .tag:first-child {
+.card > .tag-layout > .tag:first-child,
+  .card > .tag-layout > .tag-pinned:first-child {
   margin-left: 0px;
 }
 
@@ -818,8 +818,6 @@ code,
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -830,13 +828,22 @@ code,
   margin-left: 0px;
 }
 
-.card > .tag-layout > .tag > .icon {
-  display: block;
-  height: 0.75rem;
-  width: 0.75rem;
+.card > .tag-layout > .tag {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.card > .tag-layout > .\!tag > .icon {
+.card > .tag-layout > .\!tag {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.card > .tag-layout > .tag-pinned {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
+.card > .tag-layout .icon {
   display: block;
   height: 0.75rem;
   width: 0.75rem;
@@ -997,7 +1004,7 @@ code,
 
 .social-media > .account:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
 }
 
 .account > .icon {
