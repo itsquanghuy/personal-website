@@ -1,19 +1,19 @@
 [
   {
-    "id": "incorporating-my-identity-into-my-career",
-    "title": "Incorporating My Identity into My Career",
+    "id": "my-identity-in-my-career",
+    "title": "My Identity in My Career",
     "created_at": "Sep 26, 2023",
-    "category": "Humanity",
-    "pinned": false,
-    "intro": "Over the years, my career aspirations have evolved, but my mindset of building valuable products has remained constant. I believe I've found a career path that allows me to channel this passion into making a positive impact on society."
+    "category": "Personality",
+    "pinned": true,
+    "intro": "Over the years, my career aspirations have evolved, but my mindset of building valuable products has remained constant..."
   },
   {
-    "id": "my-neighborhood-and-the-importance-of-long-term-relationship",
-    "title": "My Neighborhood and The Importance of Long-Term Relationship",
+    "id": "my-neighborhood",
+    "title": "My Neighborhood",
     "created_at": "Sep 25, 2023",
     "category": "Humanity",
     "pinned": false,
-    "intro": "In my view, establishing long-term relationships may not be easy to find, but it's not difficult to cultivate and maintain them. I believe that through acts of kindness, people tend to stick around, and that's precisely what happened in my own story."
+    "intro": "In my view, establishing long-term relationships may not be easy to find, but it's not difficult to cultivate and maintain them..."
   },
   {
     "id": "friendship-brotherhood-classmates",
@@ -21,15 +21,15 @@
     "created_at": "Aug 7, 2023",
     "category": "Humanity",
     "pinned": false,
-    "intro": "Over the course of a human lifespan, 12 years represents a significant duration, not just for a friendship but also for a bond akin to brotherhood. The enduring connection between these two classmates follows this same pattern."
+    "intro": "Over the course of a human lifespan, 12 years represents a significant duration, not just for a friendship but also for a bond akin to brotherhood..."
   },
   {
-    "id": "the-excitement-of-getting-the-first-film-scan",
-    "title": "The Excitement Of Getting The First Film Scan",
+    "id": "the-first-film-scan",
+    "title": "The First Film Scan",
     "created_at": "Jul 19, 2023",
     "category": "Photography",
     "pinned": false,
-    "intro": "I have a deep love for film photography. The texture of the grain and the unique colors produced by film never fail to give me goosebumps. My journey into film photography began in 2021 when a colleague introduced me to their camera."
+    "intro": "I have a deep love for film photography. The texture of the grain and the unique colors produced by film never fail to give me goosebumps..."
   },
   {
     "id": "focus-on-film-photography",
@@ -37,7 +37,7 @@
     "created_at": "Jul 18, 2023",
     "category": "Photography",
     "pinned": false,
-    "intro": "I have a deep love for capturing moments, and I firmly believe that as the years pass, photos become increasingly valuable. However, when I look back at my previous photos from 2017, most of them taken with my phone seem to lack any real value."
+    "intro": "I have a deep love for capturing moments, and I firmly believe that as the years pass, photos become increasingly valuable..."
   },
   {
     "id": "finding-peace",
@@ -45,14 +45,14 @@
     "created_at": "Jul 14, 2023",
     "category": "Travelling",
     "pinned": false,
-    "intro": "Work and rest go hand in hand, and I firmly believe that maintaining a balance between the two is essential. Opting to visit Vung Tau City turned out to be a wise decision, providing me with the much-needed respite from my work."
+    "intro": "Work and rest go hand in hand, and I firmly believe that maintaining a balance between the two is essential..."
   },
   {
     "id": "trip-to-dreamy-city",
-    "title": "An Unforgettable Trip To A True Dreamy City",
+    "title": "A True Dreamy City",
     "created_at": "Jul 12, 2023",
     "category": "Travelling",
     "pinned": false,
-    "intro": "Many people find it easy to hop from one city to another without much hesitation. However, for me, a myriad of seemingly trivial reasons (such as it being too cold, too far away, or too rainy) had kept me from visiting Da Lat city for my entire life."
+    "intro": "Many people find it easy to hop from one city to another without much hesitation. However, for me, a myriad of seemingly trivial reasons..."
   }
 ]

@@ -58,26 +58,13 @@
   </head>
   <body>
     <main class="blog-layout">
-      <section id="feeds" class="feeds">
-        <article class="card" v-for="(post, index) in posts" :key="index">
-          <h1><a :href="post.id" class="link">{{ post.title }}</a></h1>
-          <time>{{ post.created_at }}</time>
-          <p>{{ post.intro }}</p>
-          <div class="tag-layout">
-            <div v-if="post.pinned" class="tag-pinned">
-              <img src="media/pin.svg" class="icon" />
-              <p class="ml-1 text-xs">Pinned</p>
-            </div>
-            <div class="tag">
-              <img src="media/tag.svg" class="icon" />
-              <p class="ml-1 text-xs">{{ post.category }}</p>
-            </div>
-          </div>
-        </article>
-      </section>
       <aside class="profile-layout">
         <div class="profile profile-fixed">
-          <a href="/"><img src="media/avatar.png" class="avatar" /></a>
+          <a href="/"
+            ><img
+              src="media/avatar.png"
+              class="w-36 h-36 border-2 border-gray-800 rounded-full mx-auto lg:mx-0"
+          /></a>
           <h1 class="full-name">Huy Quang Vũ</h1>
           <p class="bio blog-bio">
             I appreciate the simple joys of life
@@ -105,6 +92,33 @@
           </div>
         </div>
       </aside>
+      <section id="feeds" class="feeds">
+        <select v-model="selected" @change="onFilter">
+          <option v-for="(tag, index) in tags" :value="tag.name">
+            {{ tag.name }}
+          </option>
+        </select>
+        <article v-for="(post, index) in posts" :key="index">
+          <a :href="post.id" class="card group">
+            <img :src="post.id + '/media/cover.webp'" class="cover" />
+            <div class="detail">
+              <h1>{{ post.title }}</h1>
+              <time>{{ post.created_at }}</time>
+              <p>{{ post.intro }}</p>
+              <div class="tag-layout">
+                <div v-if="post.pinned" class="tag-pinned">
+                  <img src="media/pin.svg" class="icon" />
+                  <p class="ml-1 text-xs">Pinned</p>
+                </div>
+                <div class="tag">
+                  <img src="media/tag.svg" class="icon" />
+                  <p class="ml-1 text-xs">{{ post.category }}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
     </main>
     <script defer src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
     <script defer src="main.js"></script>
