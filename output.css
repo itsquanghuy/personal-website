@@ -774,7 +774,7 @@ select {
 }
 
 .post > footer {
-  margin-top: 0.75rem;
+  margin-top: 1.25rem;
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
