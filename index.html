@@ -26,14 +26,10 @@
       content="I appreciate the simple joys of life"
     />
     <meta property="og:title" content="Huy Quang Vũ" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@v_qhuy" />
-    <meta name="twitter:title" content="Huy Quang Vũ" />
     <meta
-      name="twitter:description"
-      content="I appreciate the simple joys of life"
+      name="trustpilot-one-time-domain-verification-id"
+      content="443918f6-9f49-4b45-a792-f3c64503aca5"
     />
-    <meta name="twitter:image" content="media/avatar.png" />
     <link rel="icon" href="media/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i"
@@ -51,77 +47,27 @@
     <title>Huy Quang Vũ</title>
   </head>
   <body>
-    <main class="blog-layout">
-      <aside class="profile-layout">
-        <div class="profile profile-fixed">
-          <a href="/"
-            ><img
-              src="media/avatar.png"
-              class="w-36 h-36 border-2 border-gray-800 rounded-full mx-auto lg:mx-0"
-          /></a>
-          <h1 class="full-name">Huy Quang Vũ</h1>
-          <p class="bio blog-bio">I appreciate the simple joys of life</p>
-          <div class="contacts">
-            <div class="social-media">
-              <a
-                href="https://www.instagram.com/v.q_huy"
-                class="account"
-                target="_blank"
-                ><img
-                  src="media/camera.svg"
-                  alt="My Photography"
-                  class="icon"
-                />
-              </a>
-              <a
-                href="https://soundcloud.com/v-qhuy"
-                class="account"
-                target="_blank"
-                ><img src="media/guitar.svg" alt="My Music" class="icon" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/v-qhuy/"
-                class="account"
-                target="_blank"
-                ><img
-                  src="media/business.svg"
-                  alt="My Business-Technology Network"
-                  class="icon"
-                />
-              </a>
-            </div>
+    <header
+      class="bg-[url('/media/cover.webp')] bg-no-repeat bg-center bg-cover h-screen flex flex-col justify-between"
+    >
+      <nav>
+        <div class="custom-container nav">
+          <h1 class="logo">
+            <a href="/">Huy Quang Vũ</a>
+          </h1>
+          <div class="menu">
+            <a href="/technology" class="menu-link">Technology</a>
+            <a href="/photography" class="menu-link">Photography</a>
+            <a href="/music" class="menu-link">Music</a>
+            <!-- <a href="/tourism" class="menu-link">Tourism</a> -->
           </div>
         </div>
-      </aside>
-      <section id="feeds" class="feeds">
-        <select v-model="selected" @change="onFilter">
-          <option v-for="(tag, index) in tags" :value="tag.name">
-            {{ tag.name }}
-          </option>
-        </select>
-        <article v-for="(post, index) in posts" :key="index">
-          <a :href="post.id" class="card group">
-            <img :src="post.id + '/media/cover.webp'" class="cover" />
-            <div class="detail">
-              <h1>{{ post.title }}</h1>
-              <time>{{ post.created_at }}</time>
-              <p>{{ post.intro }}</p>
-              <div class="tag-layout">
-                <div v-if="post.pinned" class="tag-pinned">
-                  <img src="media/pin.svg" class="icon" />
-                  <p class="ml-1 text-xs">Pinned</p>
-                </div>
-                <div class="tag">
-                  <img src="media/tag.svg" class="icon" />
-                  <p class="ml-1 text-xs">{{ post.category }}</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </article>
-      </section>
-    </main>
-    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
-    <script defer src="main.js"></script>
+      </nav>
+      <div class="custom-container text-right text-white">
+        <h2 class="text-5xl sm:text-7xl lg:text-8xl xl:text-9xl">
+          I appreciate the simple joys of life
+        </h2>
+      </div>
+    </header>
   </body>
 </html>

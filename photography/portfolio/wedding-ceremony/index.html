@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1XD3HHCB7C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1XD3HHCB7C");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Huy Quang Vũ" />
+    <meta
+      name="description"
+      content="There's nothing more special than being the photographer capturing
+              the love and joy of two people on their wedding day, especially
+              when it's your best friend's special day."
+    />
+    <meta property="og:image" content="./media/1.webp" />
+    <meta
+      property="og:description"
+      content="There's nothing more special than being the photographer capturing
+              the love and joy of two people on their wedding day, especially
+              when it's your best friend's special day."
+    />
+    <meta property="og:title" content="Wedding Photography | Huy Quang Vũ" />
+    <link rel="icon" href="../../../media/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque:300italic,400italic,300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link href="../../../output.css" rel="stylesheet" type="text/css" />
+    <title>Wedding Photography | Huy Quang Vũ</title>
+  </head>
+  <body>
+    <header class="bg-[url('/photography/media/cover.webp')] header-bg-layout">
+      <nav class="nav-layout">
+        <div class="nav">
+          <h1 class="logo">
+            <a href="/">Huy Quang Vũ</a>
+          </h1>
+          <div class="menu">
+            <a href="/photography" class="menu-link">Home</a>
+            <a href="/photography/portfolio" class="active menu-link"
+              >Portfolio</a
+            >
+            <a href="/photography/resources" class="menu-link">Resources</a>
+            <a href="/photography/blog" id="blog" class="menu-link">Blog</a>
+            <div class="social-media">
+              <a
+                href="https://www.instagram.com/v.q_huy"
+                class="account"
+                target="_blank"
+                ><img
+                  src="../../../media/instagram.svg"
+                  alt="My Photography"
+                  class="icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-layout">
+          <div class="intro-card">
+            <h2 class="intro-card-title">Wedding Ceremony</h2>
+            <p class="intro-card-description">
+              There's nothing more special than being the photographer capturing
+              the love and joy of two people on their wedding day, especially
+              when it's your best friend's special day.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="collage">
+        <div class="collage">
+          <div v-for="no in noImages">
+            <img :src="'./media/' + no + '.webp'" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-100">
+      <p class="custom-container">&copy; Huy Quang Vũ. All rights reserved.</p>
+    </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script defer src="../main.js"></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>
