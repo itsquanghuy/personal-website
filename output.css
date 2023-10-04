@@ -474,14 +474,12 @@ code,
   font-family: Inconsolata, monospace;
 }
 
-#songs,
-    #projects {
+#songs {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-#songs::-webkit-scrollbar,
-    #projects::-webkit-scrollbar {
+#songs::-webkit-scrollbar {
   display: none;
 }
 
@@ -495,10 +493,6 @@ code,
 .copyright-layout {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-#projects > * {
-  flex: 0 0 900px;
 }
 
 .custom-container {
@@ -821,162 +815,6 @@ select {
   padding-bottom: 0.5rem;
 }
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 0.75rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .card {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1024px) {
-  .card:first-child {
-    padding-top: 0px;
-  }
-}
-
-.card>.cover {
-  display: block;
-  width: auto;
-  border-radius: 0.375rem;
-}
-
-@media (min-width: 768px) {
-  .card>.detail {
-    grid-column: span 2 / span 2;
-  }
-}
-
-.detail>h1 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.group:hover .detail>h1 {
-  text-decoration-line: underline;
-}
-
-.detail>time {
-  margin-top: 0.25rem;
-  display: block;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.detail>p {
-  font-family: Lora, "serif";
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.detail .link:hover {
-  --tw-text-opacity: 1;
-  color: rgb(217 119 6 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
-.profile-layout {
-  position: relative;
-  border-bottom-width: 1px;
-  border-right-width: 0px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-@media (min-width: 1024px) {
-  .profile-layout {
-    border-bottom-width: 0px;
-    border-right-width: 1px;
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
-  }
-}
-
-.profile {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .profile {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 12rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .profile {
-    width: 16rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .profile {
-    width: 20rem;
-  }
-}
-
-.profile-fixed {
-  position: static;
-}
-
-@media (min-width: 1024px) {
-  .profile-fixed {
-    position: fixed;
-  }
-}
-
-.full-name {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 800;
-}
-
-@media (min-width: 1024px) {
-  .full-name {
-    text-align: left;
-  }
-}
-
-.bio {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  font-style: italic;
-}
-
-@media (min-width: 1024px) {
-  .bio {
-    text-align: left;
-  }
-}
-
-.contacts {
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-}
-
-@media (min-width: 1024px) {
-  .contacts {
-    margin-top: 0.75rem;
-  }
-}
-
 .social-media {
   margin-top: 0.5rem;
   display: flex;
@@ -1225,8 +1063,14 @@ select {
   width: 600px;
 }
 
+@media screen and (max-width: 640px) {
+  .intro-card-image {
+    width: 300px;
+  }
+}
+
 .intro-card-image-collage {
-  margin-left: -20rem;
+  margin-left: -15rem;
   margin-top: 1.25rem;
   display: flex;
 }
@@ -1239,6 +1083,12 @@ select {
 
 .intro-card-image-collage {
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .intro-card-image-collage {
+    margin-left: -20rem;
+  }
 }
 
 .intro-card-tag-layout>.\!tag {
@@ -2832,10 +2682,6 @@ select {
   background-image: url('/media/cover.webp');
 }
 
-.bg-\[url\(\'\/music\/media\/cover\.png\'\)\] {
-  background-image: url('/music/media/cover.png');
-}
-
 .bg-\[url\(\'\/music\/media\/cover\.webp\'\)\] {
   background-image: url('/music/media/cover.webp');
 }
@@ -2846,6 +2692,10 @@ select {
 
 .bg-\[url\(\'\/technology\/media\/cover\.jpeg\'\)\] {
   background-image: url('/technology/media/cover.jpeg');
+}
+
+.bg-\[url\(\'\/technology\/media\/cover\.webp\'\)\] {
+  background-image: url('/technology/media/cover.webp');
 }
 
 .bg-gradient-to-tr {

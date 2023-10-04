@@ -19,10 +19,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Huy Quang Vũ" />
-    <meta name="description" content="I capture moments" />
-    <meta property="og:image" content="/photography/media/cover.webp" />
-    <meta property="og:description" content="I capture moments" />
-    <meta property="og:title" content="Photography Blog | Huy Quang Vũ" />
+    <meta
+      name="description"
+      content="In my professional journey, I consider learning and its scheduling
+              to be essential. I firmly believe that growth is impossible
+              without continuous learning. I make it a practice to record
+              everything I acquire from reading tech news, reports, and blogs as
+              a way to solidify my knowledge."
+    />
+    <meta property="og:image" content="./media/cover.webp" />
+    <meta
+      property="og:description"
+      content="In my professional journey, I consider learning and its scheduling
+              to be essential. I firmly believe that growth is impossible
+              without continuous learning. I make it a practice to record
+              everything I acquire from reading tech news, reports, and blogs as
+              a way to solidify my knowledge."
+    />
+    <meta property="og:title" content="Technology Blog | Huy Quang Vũ" />
     <link rel="icon" href="../../media/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i"
@@ -37,30 +51,30 @@
       rel="stylesheet"
     />
     <link href="../../output.css" rel="stylesheet" type="text/css" />
-    <title>Photography Blog | Huy Quang Vũ</title>
+    <title>Technology Blog | Huy Quang Vũ</title>
   </head>
   <body>
-    <header class="bg-[url('/photography/media/cover.webp')] header-bg-layout">
+    <header
+      class="bg-[url('/technology/media/cover.webp')] header-bg-layout bg-center"
+    >
       <nav class="nav-layout">
         <div class="custom-container nav">
           <h1 class="logo">
             <a href="/">Huy Quang Vũ</a>
           </h1>
           <div class="menu">
-            <a href="/photography" class="menu-link">Home</a>
-            <a href="/photography/portfolio" class="menu-link">Portfolio</a>
-            <a href="/photography/resources" class="menu-link">Resources</a>
-            <a href="/photography/blog" id="blog" class="active menu-link"
+            <a href="/technology" class="menu-link">Home</a>
+            <a href="/technology/blog" id="blog" class="active menu-link"
               >Blog</a
             >
             <div class="social-media">
               <a
-                href="https://www.instagram.com/v.q_huy"
+                href="https://www.linkedin.com/in/v-qhuy/"
                 class="account"
                 target="_blank"
                 ><img
-                  src="../../media/instagram.svg"
-                  alt="My Photography"
+                  src="../../media/linkedin.svg"
+                  alt="My Career in IT Industry"
                   class="icon"
                 />
               </a>
@@ -70,6 +84,20 @@
       </nav>
     </header>
     <main>
+      <section class="bg-gray-50 intro">
+        <div class="intro-layout">
+          <div class="intro-card">
+            <h2 class="intro-card-title">My Dedication to Lifelong Learning</h2>
+            <p class="intro-card-description">
+              In my professional journey, I consider learning and its scheduling
+              to be essential. I firmly believe that growth is impossible
+              without continuous learning. I make it a practice to record
+              everything I acquire from reading tech news, reports, and blogs as
+              a way to solidify my knowledge.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="feeds" class="intro">
         <div v-if="!posts.length" class="intro-layout">
           <div class="intro-card">
@@ -97,6 +125,6 @@
       <p class="custom-container">&copy; Huy Quang Vũ. All rights reserved.</p>
     </footer>
     <script defer src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
-    <script defer src="main.js"></script>
+    <script defer src="/blog.js"></script>
   </body>
 </html>
