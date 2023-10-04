@@ -1,0 +1,1 @@
+initializeCollage(9);
