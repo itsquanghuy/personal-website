@@ -30,6 +30,8 @@
     <meta property="og:title" content="Music | Huy Quang Vũ" />
     <link rel="icon" href="../media/favicon.ico" />
     <link href="../output.css" rel="stylesheet" type="text/css" />
+    <link href="../owl.carousel.min.css" rel="stylesheet" />
+    <link href="../owl.theme.default.min.css" rel="stylesheet" />
     <title>Music | Huy Quang Vũ</title>
   </head>
   <body>
@@ -37,11 +39,16 @@
       <nav class="nav-layout">
         <div class="custom-container nav">
           <h1>
-            <a href="/" class="logo">Huy Quang Vu</a>
+            <a href="/" class="logo menu-link">V.Q. Huy</a>
           </h1>
           <div class="menu">
             <a href="/music" class="active menu-link">Home</a>
-            <a href="/music/blog" class="menu-link">Blog</a>
+            <a
+              href="https://vuqhuy.substack.com/s/music"
+              target="_blank"
+              class="menu-link"
+              >Blog</a
+            >
             <div class="social-media">
               <a
                 href="https://soundcloud.com/v-qhuy"
@@ -72,15 +79,14 @@
           </div>
         </div>
       </section>
-      <section class="py-10">
+      <section class="py-7">
         <div
-          id="songs"
-          class="flex justify-between overflow-x-auto items-start pb-2"
+          class="owl-carousel owl-theme flex justify-between overflow-x-auto items-start pb-2"
         >
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -117,10 +123,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -157,10 +163,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -197,10 +203,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -237,10 +243,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -277,10 +283,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -317,10 +323,10 @@
               >
             </div>
           </div>
-          <div class="ml-3 first:ml-0">
+          <div>
             <iframe
-              width="300"
-              height="150"
+              width="100%"
+              height="250"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -358,16 +364,17 @@
             </div>
           </div>
         </div>
-        <div class="custom-container">
-          <div class="w-1/5 h-1 rounded-full bg-gray-50">
-            <div class="progress-bar"></div>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="copyright-layout">
       <p class="custom-container">&copy; Huy Quang Vũ. All rights reserved.</p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../owl.carousel.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
